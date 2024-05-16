@@ -48,9 +48,12 @@
       </section>
 
 
-      {% for and %}
+      
 
       <section id="ideias">
+
+        {  % for and in ideas%  }
+        
         <div class="idea">
           <img src="/public/src/programacao.png" alt="" />
           <div class="content">
@@ -66,34 +69,7 @@
           </div>
         </div>
 
-        <div class="idea">
-          <img src="/public/src/objetivo.png" alt="" />
-          <div class="content">
-            <h3>Objetivos</h3>
-            <p>Execução</p>
-            <div class="description">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe
-              eligendi, provident quisquam debitis commodi praesentium, tempora
-              nihil exercitationem quam omnis sequi sunt sapiente magni. Facilis
-              possimus totam mollitia perferendis distinctio.
-            </div>
-            <a href="#">Ir para a Ideia</a>
-          </div>
-        </div>
-
-        <div class="idea">
-          <img src="/public/src/pesquisa.png" alt="" />
-          <div class="content">
-            <h3>Resultado</h3>
-            <p>Performace</p>
-            <div class="description">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe
-              eligendi, provident quisquam debitis commodi praesentium, tempora
-              nihil exercitationem quam omnis sequi sunt sapiente magni. Facilis
-              possimus totam mollitia perferendis distinctio.
-            </div>
-            <a href="#">Ir para a Ideia</a>
-          </div>
+        { % endfor %}
 
         </div>
      
