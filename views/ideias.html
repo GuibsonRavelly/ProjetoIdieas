@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="/public/css/style.css" />
+  <link rel="stylesheet" href="/public/css/ideias.css">
+    <title>Ideias</title>
+</head>
+<body id="page-ideias">
+  <div id="container">
+    <header>
+        <a href="index.html">
+
+            <img src="/public/src/undefined - Imgur.png" alt="">
+        </a>
+        <nav>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#" onclick="onOff()">Nova ideia</a></li>
+        </nav>
+
+    </header>
+    <section id="title">
+        <p>em exibição</p>
+        <h1>Ideias</h1>
+    </section>
+
+    <main>
+        <section id="ideias">
+            <div class="idea">
+              <img src="/src/programacao.png" alt="" />
+              <div class="content">
+                <h3>Trabalhos</h3>
+                <p>Estudos</p>
+                <div class="description">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe
+                  eligendi, provident quisquam debitis commodi praesentium, tempora
+                  nihil exercitationem quam omnis sequi sunt sapiente magni. Facilis
+                  possimus totam mollitia perferendis distinctio.
+                </div>
+                <a href="#">Ir para a Ideia</a>
+              </div>
+            </div>
+    
+            <div class="idea">
+              <img src="/public/src/objetivo.png" alt="" />
+              <div class="content">
+                <h3>Objetivos</h3>
+                <p>Execução</p>
+                <div class="description">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe
+                  eligendi, provident quisquam debitis commodi praesentium, tempora
+                  nihil exercitationem quam omnis sequi sunt sapiente magni. Facilis
+                  possimus totam mollitia perferendis distinctio.
+                </div>
+                <a href="#">Ir para a Ideia</a>
+              </div>
+            </div>
+    
+            <div class="idea">
+              <img src="/public/src/pesquisa.png" alt="" />
+              <div class="content">
+                <h3>Resultado</h3>
+                <p>Performace</p>
+                <div class="description">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe
+                  eligendi, provident quisquam debitis commodi praesentium, tempora
+                  nihil exercitationem quam omnis sequi sunt sapiente magni. Facilis
+                  possimus totam mollitia perferendis distinctio.
+                </div>
+                <a href="#">Ir para a Ideia</a>
+              </div>
+            </div>
+
+            <div class="idea">
+                <img src="/public/src/pesquisa.png" alt="" />
+                <div class="content">
+                  <h3>Resultado</h3>
+                  <p>Performace</p>
+                  <div class="description">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe
+                    eligendi, provident quisquam debitis commodi praesentium, tempora
+                    nihil exercitationem quam omnis sequi sunt sapiente magni. Facilis
+                    possimus totam mollitia perferendis distinctio.
+                  </div>
+                  <a href="#">Ir para a Ideia</a>
+                </div>
+              </div>
+          </section>
+    
+    </main>
+    <footer>
+        <p>Com ♥️ <a href="https://www.linkedin.com/in/guibson-ravelly-4a2700140/" target="_blank">Guibson Ravelly</a></p>
+    </footer>
+  </div>
+
+    <div id="modal" class="hide">
+        <div class="content">
+          <h1>Nova ideia</h1>
+  
+          <form action="">
+            <div class="input-wrapper">
+              <label for="title">Título da Ideia</label>
+              <input type="text" name="title" />
+            </div>
+  
+            <div class="input-wrapper">
+              <label for="category">Categoria</label>
+              <input type="text" name="category" />
+            </div>
+  
+            <div class="input-wrapper">
+              <label for="image">link da imagem</label>
+              <input type="url" name="image" />
+            </div>
+  
+            <div class="input-wrapper">
+              <label for="description">Descriçao da ideia </label>
+              <textarea name="description" cols="30" rows="10"></textarea>
+            </div>
+  
+            <div class="input-wrapper">
+              <label for="link">Link da ideia</label>
+              <input type="url" name="link" />
+            </div>
+            <a href="#" onclick="onOff()">Voltar</a>
+  
+            <button>Salvar</button>
+          </form>
+        </div>
+      </div>
+  
+      <script src="./button.js"></script>
+</body>
+</html>

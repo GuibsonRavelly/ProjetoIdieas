@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ideias</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/public/css/style.css" />
+  </head>
+  <body>
+
+    <div id="container">
+      <section id="intro">
+        <header>
+          <a href="index.html">
+
+            <img src="/public/src/undefined - Imgur.png" alt="logo marca" />
+          </a>
+        
+        </header>
+
+        <main>
+          <p>Ficar em casa em períodos longos, não deve ser nada fácil.</p>
+          <p>
+            Iremos catalogar ideias,<strong>
+              brincadeiras, jogos, filmes, livros, cursos, dicas
+            </strong>
+            e tudo que for necessário para tornar esse momento mais
+            interessante.
+          </p>
+          <p>
+            Comece clicando em ver ideias para ver as ideias cadastradas e
+            contribua adicioando a sua ideia.
+          </p>
+        </main>
+
+        <section id="buttons" class="buttons">
+          <button onclick="onOff()" id="btnAdicionarIdeia" class="fat">+ Adicionar Ideia</button>
+          <a href="ideias.html" id="btnVerIdeias" class="button">Ver ideias</a>
+        </section>
+
+        <footer id="footer" class="footer">
+          <p>Com ♥️ <a href="https://www.linkedin.com/in/guibson-ravelly-4a2700140/" target="_blank">Guibson Ravelly</a></p>
+        </footer>
+      </section>
+
+
+      {% for and %}
+
+      <section id="ideias">
+        <div class="idea">
+          <img src="/public/src/programacao.png" alt="" />
+          <div class="content">
+            <h3>Trabalhos</h3>
+            <p>Estudos</p>
+            <div class="description">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe
+              eligendi, provident quisquam debitis commodi praesentium, tempora
+              nihil exercitationem quam omnis sequi sunt sapiente magni. Facilis
+              possimus totam mollitia perferendis distinctio.
+            </div>
+            <a href="#">Ir para a Ideia</a>
+          </div>
+        </div>
+
+        <div class="idea">
+          <img src="/public/src/objetivo.png" alt="" />
+          <div class="content">
+            <h3>Objetivos</h3>
+            <p>Execução</p>
+            <div class="description">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe
+              eligendi, provident quisquam debitis commodi praesentium, tempora
+              nihil exercitationem quam omnis sequi sunt sapiente magni. Facilis
+              possimus totam mollitia perferendis distinctio.
+            </div>
+            <a href="#">Ir para a Ideia</a>
+          </div>
+        </div>
+
+        <div class="idea">
+          <img src="/public/src/pesquisa.png" alt="" />
+          <div class="content">
+            <h3>Resultado</h3>
+            <p>Performace</p>
+            <div class="description">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe
+              eligendi, provident quisquam debitis commodi praesentium, tempora
+              nihil exercitationem quam omnis sequi sunt sapiente magni. Facilis
+              possimus totam mollitia perferendis distinctio.
+            </div>
+            <a href="#">Ir para a Ideia</a>
+          </div>
+
+        </div>
+     
+      </section>
+    </div>
+
+    <!-- Modal  -->
+    <div id="modal" class="hide">
+      <div class="content">
+        <h1>Nova ideia</h1>
+
+        <form action="">
+          <div class="input-wrapper">
+            <label for="title">Título da Ideia</label>
+            <input type="text" name="title" />
+          </div>
+
+          <div class="input-wrapper">
+            <label for="category">Categoria</label>
+            <input type="text" name="category" />
+          </div>
+
+          <div class="input-wrapper">
+            <label for="image">link da imagem</label>
+            <input type="url" name="image" />
+          </div>
+
+          <div class="input-wrapper">
+            <label for="description">Descriçao da ideia </label>
+            <textarea name="description" cols="30" rows="10"></textarea>
+          </div>
+
+          <div class="input-wrapper">
+            <label for="link">Link da ideia</label>
+            <input type="url" name="link" />
+          </div>
+          <a href="#" onclick="onOff()">Voltar</a>
+
+          <button>Salvar</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="/public/button.js"></script>
+    <script src="/server.js"></script>
+  </body>
+</html>
