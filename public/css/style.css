@@ -23,6 +23,7 @@ body.hideScroll{
     width: 80%;
    margin:  40px auto;
     display: flex;
+    justify-content: center;
     
 }
 

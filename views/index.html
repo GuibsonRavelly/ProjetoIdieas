@@ -8,16 +8,15 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/public/css/style.css" />
+    <link rel="stylesheet" href="/css/style.css">
   </head>
   <body>
-
     <div id="container">
       <section id="intro">
         <header>
-          <a href="index.html">
+          <a href="/">
 
-            <img src="/public/src/undefined - Imgur.png" alt="logo marca" />
+            <img src="src/undefined - Imgur.png" alt="logo marca" />
           </a>
         
         </header>
@@ -39,81 +38,25 @@
 
         <section id="buttons" class="buttons">
           <button onclick="onOff()" id="btnAdicionarIdeia" class="fat">+ Adicionar Ideia</button>
-          <a href="ideias.html" id="btnVerIdeias" class="button">Ver ideias</a>
+          <a href="/ideias" id="btnVerIdeias" class="button">Ver ideias</a>
         </section>
 
         <footer id="footer" class="footer">
           <p>Com ♥️ <a href="https://www.linkedin.com/in/guibson-ravelly-4a2700140/" target="_blank">Guibson Ravelly</a></p>
         </footer>
       </section>
-
-
       
 
       <section id="ideias">
-
-        {  % for and in ideas%  }
         
-        <div class="idea">
-          <img src="/public/src/programacao.png" alt="" />
-          <div class="content">
-            <h3>Trabalhos</h3>
-            <p>Estudos</p>
-            <div class="description">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe
-              eligendi, provident quisquam debitis commodi praesentium, tempora
-              nihil exercitationem quam omnis sequi sunt sapiente magni. Facilis
-              possimus totam mollitia perferendis distinctio.
-            </div>
-            <a href="#">Ir para a Ideia</a>
-          </div>
-        </div>
-
-        { % endfor %}
-
-        </div>
+        {% include "all_ideas.html" %}
      
       </section>
     </div>
 
-    <!-- Modal  -->
-    <div id="modal" class="hide">
-      <div class="content">
-        <h1>Nova ideia</h1>
+    {% include "modal.html" %}
 
-        <form action="">
-          <div class="input-wrapper">
-            <label for="title">Título da Ideia</label>
-            <input type="text" name="title" />
-          </div>
-
-          <div class="input-wrapper">
-            <label for="category">Categoria</label>
-            <input type="text" name="category" />
-          </div>
-
-          <div class="input-wrapper">
-            <label for="image">link da imagem</label>
-            <input type="url" name="image" />
-          </div>
-
-          <div class="input-wrapper">
-            <label for="description">Descriçao da ideia </label>
-            <textarea name="description" cols="30" rows="10"></textarea>
-          </div>
-
-          <div class="input-wrapper">
-            <label for="link">Link da ideia</label>
-            <input type="url" name="link" />
-          </div>
-          <a href="#" onclick="onOff()">Voltar</a>
-
-          <button>Salvar</button>
-        </form>
-      </div>
-    </div>
-
-    <script src="/public/button.js"></script>
+    <script src="/button.js"></script>
     <script src="/server.js"></script>
   </body>
 </html>
